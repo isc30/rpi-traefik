@@ -1,1 +1,1 @@
-docker network create web
+docker network create traefik

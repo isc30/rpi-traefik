@@ -14,8 +14,8 @@ services:
       - ./traefik.toml:/traefik.toml
       - ./data/traefik/acme.json:/acme.json
     networks:
-      - web
+      - traefik
 
 networks:
-  web:
+  traefik:
     external: true

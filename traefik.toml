@@ -23,7 +23,7 @@ address = ":8080"
 endpoint = "unix:///var/run/docker.sock"
 watch = true
 exposedByDefault = false
-network = "web"
+network = "traefik"
 
 [acme]
 email = "me@codeisc.com"
