@@ -22,9 +22,8 @@ address = ":8080"
 [docker]
 endpoint = "unix:///var/run/docker.sock"
 watch = true
-exposedByDefault = true
+exposedByDefault = false
 network = "web"
-usebindportip = true
 
 [acme]
 email = "me@codeisc.com"
