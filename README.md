@@ -1,3 +1,3 @@
 # Installation Steps
 
-`sudo sh install.sh`
+`sudo sh configure.sh`
