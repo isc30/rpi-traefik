@@ -1,5 +1,5 @@
-debug = false
-logLevel = "ERROR"
+debug = true
+logLevel = "INFO"
 
 defaultEntryPoints = ["http", "https"]
 
@@ -10,8 +10,8 @@ address = ":8080"
 [entryPoints]
     [entryPoints.http]
     address = ":80"
-        # [entryPoints.http.redirect]
-        # entryPoint = "https"
+        [entryPoints.http.redirect]
+        entryPoint = "https"
 
     [entryPoints.https]
     address = ":443"
@@ -29,6 +29,7 @@ network = "traefik"
 email = "me@codeisc.com"
 storage = "acme.json"
 entryPoint = "https"
+acmeLogging = true
 onHostRule = true
     [acme.httpChallenge]
     entryPoint = "http"
