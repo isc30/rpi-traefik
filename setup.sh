@@ -1,4 +1,4 @@
 docker network create traefik
-mkdir data
+mkdir -p data
 touch data/acme.json
 chmod 600 data/acme.json
